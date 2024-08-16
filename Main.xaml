@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="859.2,1146.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="859.2,1174.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="46">
       <x:String>System.Activities</x:String>
@@ -74,7 +74,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Create a dictionary where key=country name and value=List of cities. Add a new city for US &amp; write all the cities from US. Remove a city from the list for UK &amp; write all the cities from UK. " DisplayName="Dictionary And Lists Demo" sap:VirtualizedContainerService.HintSize="496,1081.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Create a dictionary where key=country name and value=List of cities. Add a new city for US &amp; write all the cities from US. Remove a city from the list for UK &amp; write all the cities from UK. " DisplayName="Dictionary And Lists Demo" sap:VirtualizedContainerService.HintSize="496,1109.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" Name="Cities" />
     </Sequence.Variables>
@@ -97,7 +97,7 @@
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">Chicago</InArgument>
           <InArgument x:TypeArguments="x:String">New York</InArgument>
-          <InArgument x:TypeArguments="x:String">San Francisco</InArgument>
+          <InArgument x:TypeArguments="x:String">San Diego</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
@@ -107,10 +107,11 @@
           <InArgument x:TypeArguments="x:String">Manchester</InArgument>
           <InArgument x:TypeArguments="x:String">Bristol</InArgument>
           <InArgument x:TypeArguments="x:String">Edinburgh</InArgument>
+          <InArgument x:TypeArguments="x:String">Cambridge</InArgument>
         </scg:List>
       </uasc:BuildCollection.NextItems>
     </uasc:BuildCollection>
-    <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[Cities(&quot;US&quot;)]" DisplayName="Append item to collection" sap:VirtualizedContainerService.HintSize="434,145.33333333333334" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_8">
+    <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[Cities(&quot;US&quot;)]" DisplayName="Append item to collection" sap:VirtualizedContainerService.HintSize="433.6,173.6" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_8">
       <uasc:AppendItemToCollection.Items>
         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
           <InArgument x:TypeArguments="x:String">Portland</InArgument>
